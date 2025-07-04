@@ -23,7 +23,7 @@ def is_valid_url(text):
 
 @bot.on_message(filters.command("start"))
 async def start(_, m: Message):
-    await m.reply("🔥 Warrior Uploader Bot
+    await m.reply("🔥 PATEL BOY BOT
 
 Send a .txt file with Classplus video links.
 Bot will auto-download and send you the videos (Premium only).")
@@ -97,7 +97,7 @@ Use /redeem <code>")
             }
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 ydl.download([link])
-            await m.reply_video(f"downloads/video_{i}{WATERMARK_TAG}.mp4", caption="✅ Downloaded with Warrior Watermark")
+            await m.reply_video(f"downloads/video_{i}{WATERMARK_TAG}.mp4", caption="✅ Downloaded with PATEL BOY BOT")
         except Exception as e:
             await m.reply(f"❌ Failed to download link {i+1}: {e}")
 
